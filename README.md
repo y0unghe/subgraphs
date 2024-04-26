@@ -2,6 +2,8 @@
 
 `config`目录下的配置文件必须包含`legacy`和`v2`。因为`subgraphs/v2/src/constants/index.template`需要的factory address是从`v2`获取的。
 
+`NATIVE_ADDRESS`是`WETH`或者`WBTC`
+
 http://137.184.43.113:8000/subgraphs/name/sushiswap/v2-ethereum
 
 This repository contains multiple subgraphs:  
@@ -16,7 +18,7 @@ This repository contains multiple subgraphs:
 - [sushi](./subgraphs/sushi/README.md)
 - [xsushi](./subgraphs/xsushi/README.md)
 
-## Build
+## 编译subgraph
 
 ```sh
 NETWORK=b2 pnpm exec turbo run build --scope=v2 --force
