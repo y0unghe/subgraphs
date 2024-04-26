@@ -12,9 +12,9 @@
     "generate": "mustache ../../config/$NETWORK.js template.yaml > subgraph.yaml && mustache ../../config/$NETWORK.js src/constants/index.template.ts > src/constants/index.ts && graph codegen",
     "build": "graph build",
     "test": "graph test -r",
-    "create-local": "graph create --node http://localhost:8020/ sushiswap/v2-ethereum",
-    "remove-local": "graph remove --node http://localhost:8020/ sushiswap/v2-ethereum",
-    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 sushiswap/v2-ethereum"
+    "create-local": "graph create --node http://137.184.43.113:8020/ sushiswap/v2-ethereum",
+    "remove-local": "graph remove --node http://137.184.43.113:8020/ sushiswap/v2-ethereum",
+    "deploy-local": "graph deploy --node http://137.184.43.113:8020/ --ipfs http://137.184.43.113:5001 sushiswap/v2-ethereum"
   },
   "devDependencies": {
     "abi": "workspace:*",
