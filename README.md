@@ -1,5 +1,13 @@
 # The Graph
 
+`config`目录下的配置文件必须包含`legacy`和`v2`。因为`subgraphs/v2/src/constants/index.template`需要的factory address是从`v2`获取的。
+
+`NATIVE_ADDRESS`是`WETH`或者`WBTC`
+
+QmaXGngWrkinqmTGdMo8aE7r6e1JN8xJrfxB6Znj9TgHm7
+
+http://137.184.43.113:8000/subgraphs/name/sushiswap/v2-ethereum
+
 This repository contains multiple subgraphs:  
 
 - [v2](./subgraphs/v2/README.md)
@@ -16,6 +24,7 @@ This repository contains multiple subgraphs:
 
 ```sh
 NETWORK=polygon pnpm exec turbo run build --scope=<subgraph> --force
+NETWORK=merlin pnpm exec turbo run build --scope=v2 --force
 ```
 
 ## Testing
