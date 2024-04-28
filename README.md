@@ -24,7 +24,7 @@ This repository contains multiple subgraphs:
 
 ```sh
 NETWORK=polygon pnpm exec turbo run build --scope=<subgraph> --force
-NETWORK=merlin pnpm exec turbo run build --scope=v2 --force
+NETWORK=sepolia pnpm exec turbo run build --scope=v2 --force
 ```
 
 ## Testing
